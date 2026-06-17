@@ -58,7 +58,7 @@ db.exec(`
 `);
 
 // ── SEED (runs only once) ────────────────────────────────────
-const seeded = db.prepare("SELECT value FROM meta WHERE key='seeded'").get();
+const seeded = null; // db.prepare("SELECT value FROM meta WHERE key='seeded'").get();
 
 if (!seeded) {
   console.log('🌱 Seeding database...');
